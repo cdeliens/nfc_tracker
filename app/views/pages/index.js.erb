@@ -1,0 +1,10 @@
+
+path = <%= escape_javascript(@polylines)%>
+
+map.drawPolyline({
+  path: path,
+  strokeColor: '#'+Math.floor(Math.random()*16777215).toString(16),
+  strokeOpacity: 0.6,
+  strokeWeight: 6
+});
+
